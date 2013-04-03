@@ -50,7 +50,7 @@ module Doorkeeper
           routes.get 'authorize/:code', :action => :show#,    :as => "#{mapping[:as]}_code"
           routes.get 'authorize',       :action => :new#,     :as => mapping[:as]
           routes.post 'authorize',      :action => :create#,  :as => mapping[:as]
-          routes.destroy 'authorize',   :action => :destroy#, :as => mapping[:as]
+          routes.delete 'authorize',   :action => :destroy#, :as => mapping[:as]
         end
       end
 
